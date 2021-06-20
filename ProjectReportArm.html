@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--To Link html with css -->
+<head>
+  <link rel="stylesheet" href="Style.css">
+</head>
+    
+                                                          <!---------------Body--------------->
+<body >
+<form action="connect.php" method="post">
+<title>Robot Arm</title>
+                                                 <!---------------------- Silders ---------------------->
+    <!--Form BackGround-->
+    <div  class="BackGround1" style="width: 500px; height: 550px";>
+    <!--title-->
+    <div class="title">Engines control</div>
+        
+  <!-- slider1 -->
+<div  class="slider" style = "top:100px;">
+    <div class="sliderName"><p>Engine 1:</p></div>
+  <span id="slider_value1" style="color:red;"></span>
+  <input type="range" name="slider1" min="0" max="180" value="0" onchange="show_value1(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+        
+  <!-- slider2 -->
+<div class="slider" style = "top:160px;">
+    <div class="sliderName"><p>Engine 2:</p></div>
+  <span id="slider_value2" style="color:red;"></span>
+  <input type="range" name="slider2" min="0" max="180" value="0" onchange="show_value2(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+        
+    <!-- slider3 -->
+    <div class="slider" style = "top:220px;">
+        <div class="sliderName"><p>Engine 3:</p></div>
+  <span id="slider_value3" style="color:red;"></span>
+  <input type="range" name="slider3" min="0" max="180" value="0" onchange="show_value3(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+        
+      <!-- slider4 -->
+    <div class="slider" style = "top:280px;">
+        <div class="sliderName"><p>Engine 4:</p></div>
+  <span id="slider_value4" style="color:red;"></span>
+  <input type="range" name="slider4" min="0" max="180" value="0" onchange="show_value4(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+        
+      <!-- slider5 -->
+    <div class="slider" style = "top:340px;">
+        <div class="sliderName"><p>Engine 5:</p></div>
+  <span id="slider_value5" style="color:red;"></span>
+  <input type="range" name="slider5" min="0" max="180" value="0" onchange="show_value5(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+        
+      <!-- slider6 -->
+    <div class="slider" style = "top:400px;">
+        <div class="sliderName"><p>Engine 6:</p></div>
+  <span id="slider_value6" style="color:red;"></span>
+  <input type="range" name="slider6" min="0" max="180" value="0" onchange="show_value6(this.value);">
+  <p id="rangeValue">180</p>
+</div>
+    <!-- Buttons --> 
+    <button class="btn" name="Run"  style = "top:440px; left:158px;width: 120.5px;">Run</button>
+    <button class="btn" name="save" value="save" type="submit" style = "top:440px; left:307px; width: 120.5px; ">Save</button>
+        
+    </div>    
+    </form>
+    </body>
+</html>
+
+    <!---------------------- Java Script ---------------------->
+     <script>
+     function show_value1(x)
+{document.getElementById("slider_value1").innerHTML=x;}
+     function show_value2(x)
+{document.getElementById("slider_value2").innerHTML=x;}
+    function show_value3(x)
+{document.getElementById("slider_value3").innerHTML=x;}
+     function show_value4(x)
+{document.getElementById("slider_value4").innerHTML=x;}
+    function show_value5(x)
+{document.getElementById("slider_value5").innerHTML=x;}
+     function show_value6(x)
+{document.getElementById("slider_value6").innerHTML=x;}
+  </script>
